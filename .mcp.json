@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "vscxml": {
+      "command": "npx",
+      "args": ["-y", "@vscxml/mcp"],
+      "env": {}
+    }
+  }
+}
