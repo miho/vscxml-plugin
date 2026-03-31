@@ -1,7 +1,7 @@
 {
   "name": "vscxml",
-  "version": "0.1.0",
-  "description": "Professional W3C SCXML state machine editor, simulator, and code generator — design, simulate, test, and generate native code for 7 targets",
+  "version": "0.2.0",
+  "description": "Professional W3C SCXML state machine editor, simulator, and code generator \u00e2\u20ac\u201d design, simulate, test, and generate native code for 7 targets",
   "author": {
     "name": "Michael Hoffer",
     "url": "https://github.com/miho"
@@ -9,7 +9,15 @@
   "homepage": "https://vscxml.com",
   "repository": "https://github.com/miho/vscxml-plugin",
   "license": "MIT",
-  "keywords": ["scxml", "state-machine", "statechart", "simulation", "code-generation", "w3c", "editor"],
+  "keywords": [
+    "scxml",
+    "state-machine",
+    "statechart",
+    "simulation",
+    "code-generation",
+    "w3c",
+    "editor"
+  ],
   "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }
