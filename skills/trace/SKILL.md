@@ -38,6 +38,6 @@ Compare by name (avoids resending data):
 
 ## Tips
 
-- All targets (Java, JS, C#, C, Python, Go) emit consistent trace formats
+- All targets (Java, JS, C#, C, Python, Go, ST) emit consistent trace formats
 - Structural mode is ideal for comparing traces with timing-dependent loops (e.g., LED blinking at different speeds)
 - Use `editor_get_scxml(includeTraces=false)` to get the SCXML without trace data (saves tokens)
