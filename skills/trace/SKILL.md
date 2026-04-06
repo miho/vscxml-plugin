@@ -7,6 +7,12 @@ description: Record, compare, and replay execution traces for SCXML state machin
 
 Manage execution traces for verification and visual replay.
 
+## Prerequisites
+
+Call `scxml_status` first to check which backends are running:
+- **Simulator**: needed for trace recording and replay
+- **Editor**: needed for visual trace playback with state highlights
+
 ## Recording Traces
 
 - **During simulation**: Use `embedTrace` parameter on scenario tools:

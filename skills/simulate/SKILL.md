@@ -7,6 +7,12 @@ description: Simulate and test SCXML state machines with real-time event injecti
 
 Guide the user through simulating and testing a state machine.
 
+## Prerequisites
+
+Call `scxml_status` first to check which backends are running:
+- **Simulator**: needed for simulation, traces, event injection
+- **Editor**: needed for live state highlights and visual feedback
+
 ## Steps
 
 1. **Start simulation** with `scxml_sim_start(source="editor", connectEditor=true)`:

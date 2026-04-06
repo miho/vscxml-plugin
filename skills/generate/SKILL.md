@@ -7,6 +7,11 @@ description: Generate native code from SCXML state machines for Java, JavaScript
 
 Generate production-ready transpiled code from an SCXML state machine.
 
+## Prerequisites
+
+Call `scxml_status` first to check which backends are running:
+- **Generator**: needed for code generation and project scaffolding
+
 ## Steps
 
 1. **Choose target** — ask the user which language:
