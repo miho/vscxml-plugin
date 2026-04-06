@@ -19,22 +19,22 @@ claude --plugin-dir /path/to/vscxml-plugin
 
 ## Skills
 
-| Skill | Command | Description |
-|-------|---------|-------------|
-| Design | `/vscxml:design` | Create and visualize state machines from descriptions |
-| Simulate | `/vscxml:simulate` | Test with event injection, tracing, live highlights |
-| Generate | `/vscxml:generate` | Generate code for Java, JS, C#, C, Python, Go, ST |
-| Trace | `/vscxml:trace` | Record, compare, and replay execution traces |
+| Command | Description |
+|---------|-------------|
+| `/vscxml:design` | Create and visualize state machines from descriptions |
+| `/vscxml:simulate` | Test with event injection, tracing, live highlights |
+| `/vscxml:generate` | Generate code for Java, JS, C#, C, Python, Go, ST |
+| `/vscxml:trace` | Record, compare, and replay execution traces |
 
 ## MCP Tools
 
-The plugin bundles `@vscxml/mcp` which provides 40+ tools:
+The plugin bundles `@vscxml/mcp` which provides 49 tools:
 
 - **Design**: `scxml_create`, `scxml_validate`, `scxml_inspect`
 - **Simulation**: `scxml_sim_start`, `scxml_sim_scenario`, `scxml_sim_timed_scenario`
 - **Traces**: `scxml_trace_embed`, `scxml_trace_play`, `scxml_compare_traces`
 - **Generation**: `scxml_generate`, `scxml_generate_project`, `scxml_list_targets`
-- **Editor**: `editor_push_scxml`, `editor_add_image`, `editor_highlight`, `editor_export_svg`, and more
+- **Editor**: `editor_push_scxml`, `editor_add_state`, `editor_add_transition`, `editor_highlight`, `editor_export_svg`, and more
 
 ## Prerequisites
 

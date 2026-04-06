@@ -1,6 +1,11 @@
-# /scxml-design
+---
+name: design
+description: Create and visualize state machines from descriptions using the VSCXML MCP tools.
+---
 
-Guided workflow for designing, testing, and generating SCXML state machines using the VSCXML MCP tools.
+# SCXML Design Workflow
+
+Guided workflow for designing, testing, and generating SCXML state machines.
 
 ## When to use
 
@@ -58,6 +63,7 @@ Call `scxml_status` first to check which backends are running:
    - **NEVER send events externally that the machine generates internally** via delayed send — they'll fire twice
    - Only send external stimuli (button presses, sensor inputs)
    - Results include `enabledEvents` per step so you know which events are valid
+   - **Invoke (child machines)**: Use `scxml_sim_send(event, invokeId="childId")` to send events directly to a specific invoked child machine.
 
 7. **Save the trace** using `embedTrace` parameter on scenario tools (saves a round-trip):
    ```json
@@ -66,6 +72,8 @@ Call `scxml_status` first to check which backends are running:
    Or separately: `scxml_trace_embed(name="...", target="both")`
 
 8. **Iterate** based on the user's feedback:
+   - Use `editor_add_state(parentId="parentId", id="myState", label="My State")` to add child states
+   - Use `editor_add_transition(source, target, event="go", cond="x > 0")` for transitions
    - Use `editor_set_property` for targeted edits (NOT full `push_scxml`)
    - Use `editor_set_image_property` to modify existing images (position, visibility, z-order)
    - Use `editor_clone_state` to duplicate compound states (remaps IDs, initial, label)
@@ -96,5 +104,6 @@ Call `scxml_status` first to check which backends are running:
 - **Double events**: Internal `<send delay="..."/>` events + external sends of the same event = processed twice
 - **Stale push**: After editing in the editor, use `editor_get_scxml` to get current content — don't assume the last pushed version is current
 - **Trace loss**: Use `target="both"` on `scxml_trace_embed` to sync traces to the editor before saving
-- **Full-doc push**: Prefer `editor_set_property`, `editor_clone_state`, `editor_remove_element` over `editor_push_scxml` for targeted edits
+- **Full-doc push**: Prefer `editor_add_state(parentId=...)`, `editor_set_property`, `editor_clone_state`, `editor_remove_element` over `editor_push_scxml` for targeted edits
+- **Building hierarchies**: Use `editor_add_state(parentId="parent", id="child", label="Child")` to build nested structures
 - **Port conflicts**: If the editor can't start its API, check for stale processes. All components clean stale discovery files on startup.
