@@ -38,7 +38,9 @@ The plugin bundles `@vscxml/mcp` which provides 49 tools:
 
 ## Prerequisites
 
-The plugin connects to VSCXML backends running locally:
+- **Node.js 18+** — required to run the MCP server (`npx @vscxml/mcp`). Install from [nodejs.org](https://nodejs.org).
+
+The plugin also connects to VSCXML backends running locally:
 
 - **VSCXML-Editor** — visual diagram editor (port 48623)
 - **VSCXML-Simulator** — interactive simulation server (port 48621)
