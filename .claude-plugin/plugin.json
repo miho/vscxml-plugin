@@ -1,6 +1,6 @@
 {
   "name": "vscxml",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "description": "Professional W3C SCXML state machine editor, simulator, and code generator — design, simulate, test, and generate native code for 7 targets",
   "author": {
     "name": "Michael Hoffer",
@@ -18,6 +18,5 @@
     "w3c",
     "editor"
   ],
-  "skills": "./skills/",
   "mcpServers": "./.mcp.json"
 }

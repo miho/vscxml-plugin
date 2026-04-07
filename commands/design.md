@@ -1,5 +1,4 @@
 ---
-name: vscxml:design
 description: Create and visualize state machines from descriptions using the VSCXML MCP tools.
 ---
 
