@@ -1,7 +1,7 @@
 {
   "name": "vscxml",
-  "version": "0.2.1",
-  "description": "Professional W3C SCXML state machine editor, simulator, and code generator \u00e2\u20ac\u201d design, simulate, test, and generate native code for 7 targets",
+  "version": "0.2.2",
+  "description": "Professional W3C SCXML state machine editor, simulator, and code generator — design, simulate, test, and generate native code for 7 targets",
   "author": {
     "name": "Michael Hoffer",
     "url": "https://github.com/miho"
