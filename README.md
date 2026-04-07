@@ -21,12 +21,12 @@ claude --plugin-dir /path/to/vscxml-plugin
 
 | Command | Description |
 |---------|-------------|
-| `/vscxml-design` | Create and visualize state machines from descriptions |
-| `/vscxml-simulate` | Test with event injection, tracing, live highlights |
-| `/vscxml-generate` | Generate code for Java, JS, C#, C, Python, Go, ST |
-| `/vscxml-trace` | Record, compare, and replay execution traces |
+| `/vscxml:design` | Create and visualize state machines from descriptions |
+| `/vscxml:simulate` | Test with event injection, tracing, live highlights |
+| `/vscxml:generate` | Generate code for Java, JS, C#, C, Python, Go, ST |
+| `/vscxml:trace` | Record, compare, and replay execution traces |
 
-Skills are auto-invoked by Claude when the task matches (e.g., "generate Go code" triggers `vscxml-generate`). You can also invoke them explicitly with the slash commands above.
+Skills are auto-invoked by Claude when the task matches (e.g., "generate Go code" triggers `vscxml:generate`). You can also invoke them explicitly with the slash commands above.
 
 ## MCP Tools
 
