@@ -1,5 +1,5 @@
 ---
-name: trace
+name: vscxml:trace
 description: Record, compare, and replay execution traces for SCXML state machines. Verify behavior across simulator and generated code.
 ---
 
