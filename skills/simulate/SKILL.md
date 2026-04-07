@@ -1,5 +1,5 @@
 ---
-name: simulate
+name: vscxml:simulate
 description: Simulate and test SCXML state machines with real-time event injection, tracing, and live editor highlights.
 ---
 

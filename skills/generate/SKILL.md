@@ -1,5 +1,5 @@
 ---
-name: generate
+name: vscxml:generate
 description: Generate native code from SCXML state machines for Java, JavaScript, C#, C, Python, Go, and Structured Text.
 ---
 
